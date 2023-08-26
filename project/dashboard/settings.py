@@ -12,10 +12,26 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CUSTOM_APPS = [
+    'apps.pages.dashboard',
+    'apps.pages.charts',
+    'apps.pages.login',
+    'apps.pages.pagenotfound',
+    'apps.pages.password',
+    'apps.pages.register',
+    'apps.tables',
+
+    'apps.components.buttons', 
+    'apps.components.cards',
+    
+    'apps.utilities.animations', 
+    'apps.utilities.borders', 
+    'apps.utilities.colors', 
+    'apps.utilities.others',
+]
+
 # Application definition
 INSTALLED_APPS = [
-    'apps.core',
-    'apps.frontend',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +55,13 @@ ROOT_URLCONF = 'dashboard.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'dashboard/templates'],
+        'DIRS': [
+            BASE_DIR / 'dashboard.templates',
+            BASE_DIR / 'apps/pages.templates',
+            BASE_DIR / 'apps/components.templates',
+            BASE_DIR / 'apps/utilities.templates',
+            BASE_DIR / 'apps/tables.templates',            
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -51,7 +73,7 @@ TEMPLATES = [
         },
     },
 ]
-print(f"settings: {TEMPLATES=}")
+
 WSGI_APPLICATION = 'dashboard.wsgi.application'
 
 
@@ -104,7 +126,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'dashboard/static')
 ]
-print(f"settigs: {STATICFILES_DIRS=}")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 

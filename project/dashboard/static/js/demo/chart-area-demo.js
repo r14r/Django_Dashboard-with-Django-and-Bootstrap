@@ -116,3 +116,5 @@ var myLineChart = new Chart(ctx, {
     }
   }
 });
+
+console.log('chart-area-demo.js: initialized')

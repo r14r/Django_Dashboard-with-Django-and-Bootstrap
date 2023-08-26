@@ -33,3 +33,5 @@ var myPieChart = new Chart(ctx, {
     cutoutPercentage: 80,
   },
 });
+
+console.log('chart-pie-demo.js: initialized')

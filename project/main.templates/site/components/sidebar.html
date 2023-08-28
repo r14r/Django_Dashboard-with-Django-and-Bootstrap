@@ -1,0 +1,57 @@
+{% load static %}
+
+<div class="flex-shrink-0 p-3" style="overflow-y: scroll;">
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#examples-collapse" aria-expanded="true">
+        Examples
+      </button>
+      <div class="collapse show" id="examples-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="{% url 'apps.pages.main:album' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Album</a></li>
+          <li><a href="{% url 'apps.pages.main:badges' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Badges</a></li>
+          <li><a href="{% url 'apps.pages.main:blog' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Blog</a></li>
+          <li><a href="{% url 'apps.pages.main:breadcrumbs' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Breadcrumbs</a></li>
+          <li><a href="{% url 'apps.pages.main:buttons' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Buttons</a></li>
+          <li><a href="{% url 'apps.pages.main:carousel' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Carousel</a></li>
+          <li><a href="{% url 'apps.pages.main:charts' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Charts</a></li>
+          <li><a href="{% url 'apps.pages.main:cheatsheet' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Cheatsheet</a></li>
+          <li><a href="{% url 'apps.pages.main:checkout' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Checkout</a></li>
+          <li><a href="{% url 'apps.pages.main:cover' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Cover</a></li>
+          <li><a href="{% url 'apps.pages.main:dashboard' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Dashboard</a></li>
+          <li><a href="{% url 'apps.pages.main:dropdowns' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Dropdowns</a></li>
+          <li><a href="{% url 'apps.pages.main:features' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Features</a></li>
+          <li><a href="{% url 'apps.pages.main:footers' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Footers</a></li>
+          <li><a href="{% url 'apps.pages.main:grid' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Grid</a></li>
+          <li><a href="{% url 'apps.pages.main:headers' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Headers</a></li>
+          <li><a href="{% url 'apps.pages.main:heroes' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Heroes</a></li>
+          <li><a href="{% url 'apps.pages.main:jumbotron' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Jumbotron</a></li>
+          <li><a href="{% url 'apps.pages.main:jumbotrons' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Jumbotrons</a></li>
+          <li><a href="{% url 'apps.pages.main:list-groups' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">List Groups</a></li>
+          <li><a href="{% url 'apps.pages.main:login' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Login</a></li>
+          <li><a href="{% url 'apps.pages.main:main' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Main</a></li>
+          <li><a href="{% url 'apps.pages.main:masonry' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Masonry</a></li>
+          <li><a href="{% url 'apps.pages.main:modals' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Modals</a></li>
+          <li><a href="{% url 'apps.pages.main:navbar-bottom' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Navbar Bottom</a></li>
+          <li><a href="{% url 'apps.pages.main:navbar-fixed' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Navbar Fixed</a></li>
+          <li><a href="{% url 'apps.pages.main:navbar-static' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Navbar Static</a></li>
+          <li><a href="{% url 'apps.pages.main:navbars' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Navbars</a></li>
+          <li><a href="{% url 'apps.pages.main:navbars-offcanvas' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Navbars Offcanvas</a></li>
+          <li><a href="{% url 'apps.pages.main:offcanvas' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Offcanvas</a></li>
+          <li><a href="{% url 'apps.pages.main:offcanvas-navbar' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Offcanvas Navbar</a></li>
+          <li><a href="{% url 'apps.pages.main:pagenotfound' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Pagenotfound</a></li>
+          <li><a href="{% url 'apps.pages.main:password' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Password</a></li>
+          <li><a href="{% url 'apps.pages.main:pricing' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Pricing</a></li>
+          <li><a href="{% url 'apps.pages.main:product' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Product</a></li>
+          <li><a href="{% url 'apps.pages.main:register' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Register</a></li>
+          <li><a href="{% url 'apps.pages.main:sidebars' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sidebars</a></li>
+          <li><a href="{% url 'apps.pages.main:sign-in' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign-in</a></li>
+          <li><a href="{% url 'apps.pages.main:starter-template' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Starter-template</a></li>
+          <li><a href="{% url 'apps.pages.main:sticky-footer' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sticky-footer</a></li>
+          <li><a href="{% url 'apps.pages.main:sticky-footer-navbar' %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sticky-footer-navbar</a></li>
+
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>

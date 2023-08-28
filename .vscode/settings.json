@@ -7,7 +7,14 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
         "**/__pycache__": true,
-        "**/.venv": true
+        "**/.venv": true,
+        "**/set_env.sh": true,
+        "**/.envrc": true,
+        "**/install": false
     },
-    "explorerExclude.backup": {}
+    "explorerExclude.backup": {},
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
 }

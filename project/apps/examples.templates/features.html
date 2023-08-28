@@ -1,17 +1,10 @@
 {% extends "site/base.html" %}
 {% load static %}
-{% block title %}
-    Dashboard
-{% endblock title %}
-{% block nav-style %}
-    mkt-nav
-{% endblock nav-style %}
-{% block content %}
-{% endblock content %}
+{% block title %}Dashboard{% endblock title %}
+{% block nav-style %}mkt-nav{% endblock nav-style %}
 {% include "site/components/additional_styles.html" %}
-<!-- Custom styles for this template -->
-<link href="features.css" rel="stylesheet">
 
+{% block content %}
 <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
             id="bd-theme"
@@ -470,3 +463,4 @@
         </div>
     </div>
 </main>
+{% endblock content %}

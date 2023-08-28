@@ -13,5 +13,5 @@ urlpatterns = [
 for custom_app in CUSTOM_APPS:
     pattern = custom_app.replace('apps.', '')
     urlpatterns.append(
-        path(pattern, include(custom_app + '.urls', namespace=custom_app), name=pattern, ),
+        path(pattern + '/', include(custom_app + '.urls', namespace=custom_app), name=pattern, ),
     )

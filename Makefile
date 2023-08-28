@@ -1,3 +1,5 @@
+MESSAGE   := Changes
+
 default:
 	cat Makefile
 
@@ -9,3 +11,6 @@ run:
 	cd project && python manage.py runserver
 
 
+commit:
+	git add .
+	git commit -m "$(MESSAGE)"

@@ -1,16 +1,10 @@
 {% extends "site/base.html" %}
 {% load static %}
-{% block title %}
-    Dashboard
-{% endblock title %}
-{% block nav-style %}
-    mkt-nav
-{% endblock nav-style %}
+{% block title %}Jumbotrons{% endblock title %}
+{% block nav-style %}mkt-nav{% endblock nav-style %}
 {% include "site/components/additional_styles.html" %}
 {% block additional_styles %}
-    <link href="{% static 'vendor/bootstrap-examples/5.3.1/css/jumbotrons.css' %}"
-          rel="stylesheet"
-          type="text/css" />
+<link href="{% static 'vendor/bootstrap-examples/5.3.1/css/jumbotrons.css' %}" rel="stylesheet" type="text/css" />
 {% endblock additional_styles %}
 {% block content %}
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">

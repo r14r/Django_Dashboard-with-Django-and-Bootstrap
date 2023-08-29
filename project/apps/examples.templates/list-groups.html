@@ -3,12 +3,11 @@
 {% block title %}Dashboard{% endblock title %}
 {% block nav-style %}mkt-nav{% endblock nav-style %}
 {% include "site/components/additional_styles.html" %}
+{% block additional_styles%}
+<link href="{% static 'vendor/bootstrap-examples/5.3.1/css/list-groups.css' %}" rel="stylesheet" type="text/css" />
+{% endblock additional_styles%}
+
 {% block content %}
-
-{% endblock content %}
-<!-- Custom styles for this template -->
-<link href="list-groups.css" rel="stylesheet">
-
 <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
             id="bd-theme"
@@ -364,3 +363,4 @@
         </div>
     </div>
 </div>
+{% endblock content %}

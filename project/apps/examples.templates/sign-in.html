@@ -3,12 +3,11 @@
 {% block title %}Dashboard{% endblock title %}
 {% block nav-style %}mkt-nav{% endblock nav-style %}
 {% include "site/components/additional_styles.html" %}
-{% block content %}
+{% block additional_styles%}
+<link href="{% static 'vendor/bootstrap-examples/5.3.1/css/sign-in.cssX' %}" rel="stylesheet" type="text/css" />
+{% endblock additional_styles%}
 
-{% endblock content %}
-<!-- Custom styles for this template -->
-<link href="sign-in.css" rel="stylesheet">
-</head>
+{% block content %}
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="check2" viewBox="0 0 16 16">
@@ -83,10 +82,11 @@
             </li>
         </ul>
     </div>
+
     <main class="form-signin w-100 m-auto">
         <form>
             <img class="mb-4"
-                 src="../assets/brand/bootstrap-logo.svg"
+                 src="{% static 'img/bootstrap-logo.svg' %}"
                  alt=""
                  width="72"
                  height="57">
@@ -116,3 +116,4 @@
             <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
         </form>
     </main>
+{% endblock content %}

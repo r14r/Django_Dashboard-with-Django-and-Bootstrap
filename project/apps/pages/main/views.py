@@ -6,7 +6,7 @@ def display_template(request, template, context={}):
 
 
 def index(request):
-    return display_template(request, "main")
+    return display_template(request, "main/index")
 
 
 def album(request):

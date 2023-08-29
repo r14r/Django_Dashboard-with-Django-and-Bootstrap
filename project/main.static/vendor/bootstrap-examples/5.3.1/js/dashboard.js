@@ -47,3 +47,6 @@
     }
   })
 })()
+
+
+console.log('main.static/vendor/bootstrap-examples/5.3.1/js/dashboard.js')
